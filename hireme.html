@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Include necessary meta tags, CSS, and scripts -->
+  <style>
+    /* Add CSS for styling the select element */
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <section id="hire-form" class="hire-form">
+    <div class="container">
+      <div class="section-title">
+        <h2 style=" text-decoration:underline ; color: cadetblue;">Select Roles to Hire For</h2>
+        <p style="color: purple;">Select one or more roles you'd like to hire for.</p>
+      </div>
+      <form action="submit-request.html" method="post">
+        <div class="form-group">
+          <select id="roles" name="roles[]" multiple required>
+            <option value="java-developer">Java Developer</option>
+            <option value="web-developer">Web Developer</option>
+            <option value="data-analyst">Data Analyst</option>
+            <!-- Add more roles as needed -->
+          </select>
+        </div><br><br>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div><br><br>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div><br><br>
+         <button><a href="thanks.html">Send Request</a></button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
